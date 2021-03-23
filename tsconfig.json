@@ -2,6 +2,10 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "sourceMap": true,
+    "declaration": true,
+    "incremental": true,
+    "moduleResolution": "node",
+    "lib": ["DOM", "es2019"],
     "module": "es6",
     "target": "es5"
   }

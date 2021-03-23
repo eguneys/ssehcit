@@ -1,0 +1,43 @@
+.board-editor {
+  display: flex;
+  flex-flow: column;
+  user-select: none;
+}
+
+.board-editor .board {
+  position: relative;
+  flex: 1;
+  aspect-ratio: 1/1;
+}
+
+.board-editor .spare {
+  display: flex;
+  background: #6b6b6b;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 30%) inset;
+}
+
+.board-editor .spare .no-square {
+  flex: 0 0 12.5%;
+  transition: all 150ms;
+}
+
+.board-editor .spare .no-square div {
+  position: relative;
+  display: block;
+  aspect-ratio: 1/1;
+}
+
+.board-editor .spare piece {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.board-editor piece.dragging {
+  z-index: 4;
+}
+
+.board-editor piece.dragging.hidden {
+  display: none;
+}
